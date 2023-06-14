@@ -1,27 +1,9 @@
 fileFormatVersion: 2
-guid: 77397d656c2cba24ea32fc63b63f5a27
+guid: b2718a46b76d89b4791770838ec05217
 ModelImporter:
   serializedVersion: 21202
-  internalIDToNameTable:
-  - first:
-      74: -1881513580907979650
-    second: FBX_Temp
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Black
-    second: {fileID: 2100000, guid: 2f53e660a2f4c404d901523a3b8b7fcc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Color-1
-    second: {fileID: 2100000, guid: 2f53e660a2f4c404d901523a3b8b7fcc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Color-2
-    second: {fileID: 2100000, guid: 9ef8faa73621cf84eb02b0710cc319cb, type: 2}
+  internalIDToNameTable: []
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
