@@ -17,6 +17,15 @@ public class CheckCollisions : MonoBehaviour
             other.gameObject.SetActive(false); 
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            Debug.Log("Touched Obstacle!..");
+        }
+    }
+
     public void AddCoin()
     {
         score++;
