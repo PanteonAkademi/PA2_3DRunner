@@ -7,9 +7,15 @@ public class PlayerController : MonoBehaviour
     public float runningSpeed;
     public float xSpeed;
     public float limitx;
+
+    // Added new codes
+    public Animator PlayerAnim;
+    public GameObject Player;
+
     void Start()
     {
-        
+        // Added new codes
+        PlayerAnim = Player.GetComponentInChildren<Animator>();
     }
 
     

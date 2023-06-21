@@ -6,7 +6,9 @@ TagManager:
   tags:
   - Coin
   - Obstacle
-  - speedboost
+  - BumperObs
+  - Undefined
+  - Speedboost
   layers:
   - Default
   - TransparentFX
