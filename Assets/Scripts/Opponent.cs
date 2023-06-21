@@ -14,7 +14,7 @@ public class Opponent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        OpponentAgent= GetComponent<NavMeshAgent>();
+        OpponentAgent = GetComponent<NavMeshAgent>();
         OpponentStartPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         speedBoosterIcon.SetActive(false);
     }
@@ -31,6 +31,21 @@ public class Opponent : MonoBehaviour
         {
             transform.position = OpponentStartPos;
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Speedboost"))
+        {
+            OpponentAgent.speed = OpponentAgent.speed + 3f;
+            speedBoosterIcon.SetActive(true);
+            StartCoroutine(SlowAfterAWhileCoroutine());
+        }
+    }
+    private IEnumerator SlowAfterAWhileCoroutine() {
+        yield return new WaitForSeconds(2.0f);
+        OpponentAgent.speed = OpponentAgent.speed - 3f;
+        speedBoosterIcon.SetActive(false);
     }
 
 }
